@@ -1,0 +1,73 @@
+class Driver{
+	String name;
+	String vehicle;
+	int learningLicenseNo;
+	String address;
+	
+    void driverRecord(String n, String v, int ll, String a) {
+    	name = n;
+    	vehicle = v;
+    	learningLicenseNo = ll;
+    	address = a;
+    }
+    void display() {
+    	System.out.println(name +" "+vehicle +" "+learningLicenseNo+" "+address);
+    }
+}
+class Vehicle extends Driver{
+	int accelerationControl;
+	int brakeControl;
+	int gearControl;
+	int speedLimit;
+}
+class TwoWheeler extends Vehicle{
+	int accelerationControl() {
+		return 4;
+	}
+	int brakeControl() {
+		return 5;
+	}
+	int gearControl(){
+		return 5;
+	}
+	int speedLimit(){
+		return 5;
+	}
+	
+}
+
+class FourWheeler extends Vehicle{
+	
+	int accelerationControl() {
+		return 2;
+	}
+	int brakeControl() {
+		return 5;
+	}
+	int gearControl(){
+		return 7;
+	}
+	int speedLimit(){
+		return 5;
+	}
+	
+	
+}
+
+public class TestDriver {
+	public static void main(String args[]) {
+		System.out.println("Hello Java");
+		Driver d1 = new Driver();
+		Driver d2 = new Driver();
+		d1.driverRecord("anu","two-wheeler",100,"banglore");
+		d2.driverRecord("mihir","four-wheeler",150,"banglore");
+		TwoWheeler tw = new TwoWheeler();
+		System.out.println(tw.accelerationControl());
+		;
+		FourWheeler fw = new FourWheeler();
+		d1.display();
+		d2.display();
+		
+	}
+}
+

@@ -1,0 +1,24 @@
+class Driver{
+	String name;
+	int learningLicenseNo;
+	String address;
+	
+    void driverRecord(String n, int ll, String a) {
+    	name = n;
+    	learningLicenseNo = ll;
+    	address = a;
+    }
+}
+
+
+public class Vehicle {
+	public static void main(String args[]) {
+		System.out.println("Hello Java");
+		Driver d1 = new Driver();
+		Driver d2 = new Driver();
+		d1.driverRecord("anu",100,"banglore");
+		d2.driverRecord("mihir",150,"banglore");
+			
+	}
+}
+

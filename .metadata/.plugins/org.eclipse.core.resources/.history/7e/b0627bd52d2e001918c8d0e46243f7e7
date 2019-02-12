@@ -1,0 +1,22 @@
+class Driver{
+	String name;
+	int learningLicenseNo;
+	String address;
+}
+
+
+public class Vehicle {
+	public static void main(String args[]) {
+		System.out.println("Hello Java");
+		Driver d1 = new Driver();
+		d1.name = "anupama";
+		d1.learningLicenseNo = 100;
+		d1.address ="Banglore";
+		
+		Driver d2 = new Driver();
+		d2.name = "mihir";
+		d2.learningLicenseNo = 150;
+		d2.address ="Chennai";	
+	}
+}
+
