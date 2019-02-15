@@ -1,0 +1,31 @@
+
+public class Ascii {
+	public static void main(String[] args) {
+		
+		operator op = new operator();
+		op.bitwise();
+		op.SwitchCase();
+			int intArray[];
+			intArray = new int[3];
+			intArray[0]=2;
+			intArray[1]=4;
+			intArray[2]=8;
+			
+			for(int i=0; i<3; i++) {
+				System.out.print(intArray[i]);
+			}
+			// 2D array
+			int n=10;
+			int[][] twoDimArray = new int[n][];
+			for(int i=0;i < n;i++ ) {
+				twoDimArray[i] = new int[i+1];
+			}
+			
+			for(int i=0; i<n;i++) {
+				for(int j=0; j<i+1; j++) {
+					twoDimArray[i][j]=i;
+				}
+			}
+		}
+	}
+

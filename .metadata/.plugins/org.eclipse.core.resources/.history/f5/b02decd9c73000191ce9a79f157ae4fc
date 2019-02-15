@@ -1,0 +1,15 @@
+
+public class Ascii {
+	public static void main(String[] args) {
+			int intArray[];
+			intArray = new int[3];
+			intArray[0]=2;
+			intArray[1]=4;
+			intArray[2]=8;
+			
+			for(int i=0; i<3; i++) {
+				System.out.print(intArray[i]);
+			}
+		}
+	}
+

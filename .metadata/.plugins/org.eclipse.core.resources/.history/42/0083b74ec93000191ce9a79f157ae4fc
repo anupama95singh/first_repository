@@ -1,0 +1,13 @@
+
+public class operator {
+		int num1 = 2;
+		int num2 = 2;
+		
+		public void bitwise() {
+		 System.out.println("XOR =" +(num1 ^ num2));
+		 
+		 int num3 = 0b101010;
+		 int num4 = 0b000001;
+		 System.out.println("XOR =" +(num3 ^ num4));
+}
+}

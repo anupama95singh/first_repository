@@ -1,0 +1,50 @@
+import java.lang.Integer;
+public class operator {
+		int num1 = 2;
+		int num2 = 2;
+		
+		public void bitwise() {
+		 System.out.println("XOR =" +(num1 ^ num2));
+		 
+		 int num3 = 0b101010;
+		 int num4 = 0b101010;
+		 
+		 int num5 = num3^num4;
+		 Integer.toString(num5,2);
+		 System.out.println("XOR =" +Integer.toString(num5,2));
+}
+		
+		public void SwitchCase() {
+			 int day = 5; 
+		        String dayString; 
+		  
+		        // switch statement with int data type 
+		        switch (day) { 
+		        case 1: 
+		            dayString = "Monday"; 
+		            break; 
+		        case 2: 
+		            dayString = "Tuesday"; 
+		            break; 
+		        case 3: 
+		            dayString = "Wednesday"; 
+		            break; 
+		        case 4: 
+		            dayString = "Thursday"; 
+		            break; 
+		        case 5: 
+		            dayString = "Friday"; 
+		            break; 
+		        case 6: 
+		            dayString = "Saturday"; 
+		            break; 
+		        case 7: 
+		            dayString = "Sunday"; 
+		            break; 
+		        default: 
+		            dayString = "Invalid day"; 
+		            break; 
+		        } 
+		        System.out.println(dayString); 
+		}
+}

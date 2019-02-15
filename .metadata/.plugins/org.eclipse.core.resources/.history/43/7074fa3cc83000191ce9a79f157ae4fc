@@ -1,0 +1,10 @@
+
+public class operator {
+		int num1 = 2;
+		int num2 = 2;
+		
+		public void bitwise() {
+		 System.out.println("XOR =" +(num1 ^ num2));
+		 
+}
+}
